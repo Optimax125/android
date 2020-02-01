@@ -2,10 +2,11 @@ import jnim
 import android/os/bundle
 import android/net/uri
 
-jclass android.content.Intent* of JVMObject:
+jclass android.content.Intent * of JVMObject:
+    proc addFlags*(flags: jint): Intent
     proc getExtras*(): Bundle
     proc getData*(): Uri
-    proc hasExtra*(key: string): bool
     proc getStringExtra*(key: string): string
-    proc setData*(u: Uri)
+    proc hasExtra*(key: string): bool
     proc removeExtra*(key: string)
+    proc setData*(u: Uri)
