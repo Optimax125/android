@@ -12,6 +12,7 @@ jclass android.app.Activity * of ContextWrapper:
     proc onCreate*(savedInstanceState: Bundle)
     proc runOnUiThread*(r: Runnable)
     proc startActivity*(intent: Intent)
+    proc startActivityForResult*(intent: Intent, requestCode: jint)
 
 var gCurrentActivity {.threadvar.}: Activity
 

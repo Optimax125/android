@@ -8,4 +8,4 @@ license       = "MIT"
 # Dependencies
 
 requires "nim >= 0.16.1"
-requires "jnim"
+requires "https://github.com/Optimax125/jnim.git"

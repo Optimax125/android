@@ -49,6 +49,8 @@ const FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS* = 2097152
 
 
 jclass android.content.Intent * of JVMObject:
+    proc new*
+    proc new*(action: string)
     proc addFlags*(flags: jint): Intent
     proc getExtras*(): Bundle
     proc getData*(): Uri
